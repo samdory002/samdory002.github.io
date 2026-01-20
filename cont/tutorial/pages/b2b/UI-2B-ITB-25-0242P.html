@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0242P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 53,
+                top: 487
+              },
+              scrollTop: 0,
+              description:
+                '상품 약정에 포함된 모든 약정서 내용을 꼼꼼하게 확인하고 동의 체크박스를 선택해 주세요. (법인/개인사업자 여부에 따라 약정서 목록과 내용이 달라질 수 있습니다.)'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 333,
+                top: 998
+              },
+              scrollTop: 900,
+              description:
+                '[금융거래 계약서류 전체 다운로드]를 클릭하면 약정중인 상품에 해당하는 서류가 PDF 파일로 다운로드됩니다.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 129,
+                top: 1071
+              },
+              scrollTop: 900,
+              description:
+                '본 약정에 대한 약관 등 주요내용 설명사항을 이해하였고 계약서류를 다운로드 교부받았음을 확인하는 동의 체크박스를 선택해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 296,
+                top: 1216
+              },
+              scrollTop: 900,
+              description: 'OTP 번호를 입력해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 460,
+                top: 1455
+              },
+              scrollTop: 900,
+              description:
+                '[확인]을 클릭하면 인증서 인증 진행 후 약정완료 화면으로 이동합니다.'
+            },
+            {
+              index: 5,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

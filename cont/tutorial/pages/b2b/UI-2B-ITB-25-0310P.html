@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0310P_01.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent2" class="stage-content-body2">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0310P_02.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent3" class="stage-content-body3">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0310P_03.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 284,
+                top: 154
+              },
+              scrollTop: 0,
+              description:
+                '발행결과 확인 화면에서는 채권의 발행, 변경, 취소 작업에 대한 결과를 확인할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 400,
+                top: 483
+              },
+              scrollTop: 0,
+              description: '조회 조건을 선택한 후 [조회]를 클릭해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'changeToScroll',
+              pointer: {
+                left: 61,
+                top: 765
+              },
+              scrollTop: 460,
+              description:
+                '발행 상태 별 건수와 금액을 확인할 수 있습니다. 상태를 누르시면 선택한 상태의 내역만 조회됩니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 256,
+                top: 951
+              },
+              scrollTop: 460,
+              description:
+                '조회된 등록내역에서 등록내역명을 클릭해 주세요. 아래에 채권 별 처리결과 내역을 확인할 수 있어요.'
+            },
+            {
+              index: 4,
+              type: 'changeToScroll',
+              pointer: {
+                left: 776,
+                top: 1294
+              },
+              scrollTop: 760,
+              description:
+                '처리결과 내역 선택 후 [상세조회]를 클릭하면 자세한 채권 정보를 확인할 수 있습니다.'
+            },
+            {
+              index: 5,
+              type: 'scroll',
+              pointer: {
+                left: 476,
+                top: 154
+              },
+              scrollTop: 0,
+              description: '구매 결제내역 조회 탭을 클릭해 주세요.'
+            },
+            {
+              index: 6,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 2) {
+          document.getElementById('stageContent2').classList.add('on')
+        }
+        if (_index === 4) {
+          document.getElementById('stageContent3').classList.add('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

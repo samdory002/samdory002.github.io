@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0406P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 303,
+                top: 236
+              },
+              scrollTop: 0,
+              description:
+                '송금 신청을 완료했어요. \n영업점에서 신청 내역을 확인 후 최종적으로 송금이 완료돼요.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 224,
+                top: 608
+              },
+              scrollTop: 55,
+              description:
+                '추가로 송금 신청을 원하시면 \n[계속송금]을 클릭해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 383,
+                top: 608
+              },
+              scrollTop: 55,
+              description:
+                '2단계에서 증빙서류를 제출하지 못했다면 [증빙서류제출]을 클릭해 보낼송금 증빙서류 제출 메뉴로 이동할 수 있어요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 533,
+                top: 608
+              },
+              scrollTop: 55,
+              description:
+                '[송금결과조회]를 클릭하면 건별송금 신청결과 조회 메뉴로 이동해 신청 상태와 신청서 접수 여부를 확인할 수 있어요.'
+            },
+            {
+              index: 4,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

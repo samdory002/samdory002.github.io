@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/trn/UI-2B-ITB-25-0110P.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent2" class="stage-content-body2">
+              <img
+                src="/cont/resource/img/guide/trn/UI-2B-ITB-25-0111P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 59,
+                top: 250
+              },
+              scrollTop: 0,
+              description: '출금정보를 입력 또는 선택해 주세요.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 43,
+                top: 627
+              },
+              scrollTop: 550,
+              description:
+                '최근입금계좌, 자주쓰는 입금계좌 내역을 선택하거나 직접 입력하여 입금정보를 입력할 수 있어요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 197,
+                top: 627
+              },
+              scrollTop: 550,
+              description:
+                '미리 작성한 Excel, CSV, TEXT 파일을 업로드하여 입금정보를 등록할 수 있어요.'
+            },
+            {
+              index: 3,
+              type: 'changeToScroll',
+              pointer: {
+                left: 203,
+                top: 706
+              },
+              scrollTop: 550,
+              description:
+                '[파일찾기]를 클릭해 미리 작성한 \nExcel, CSV, TEXT 파일 중 등록할 파일을 선택해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 394,
+                top: 1788
+              },
+              scrollTop: 1225,
+              description: '입금정보를 모두 입력했다면 [추가]를 클릭해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'scroll',
+              pointer: {
+                left: 375,
+                top: 2669
+              },
+              scrollTop: 2115,
+              description:
+                '입력하신 계좌번호, 예금주, 금액을 확인하신 후 [다음]을 클릭해 주세요.'
+            },
+            {
+              index: 6,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 3) {
+          document.getElementById('stageContent2').classList.add('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

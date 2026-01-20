@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0213P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 40,
+                top: 387
+              },
+              scrollTop: 10,
+              description:
+                '대출실행 1단계 화면에서 등록한 정보를 최종적으로 확인하고 인증을 진행할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 810,
+                top: 403
+              },
+              scrollTop: 310,
+              description:
+                '아코디언 버튼을 누르면 상세내용을 확인할 수 있습니다. 모든 정보가 정상적으로 등록되었는지 확인해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 299,
+                top: 1343
+              },
+              scrollTop: 1030,
+              description: 'OTP 번호를 입력해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 453,
+                top: 1580
+              },
+              scrollTop: 1030,
+              description:
+                '[대출실행] 버튼을 선택 시, 인증서 인증 진행 후 대출실행이 실행됩니다.'
+            },
+            {
+              index: 4,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

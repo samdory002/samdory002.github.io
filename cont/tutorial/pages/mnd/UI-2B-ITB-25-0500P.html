@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/mnd/UI-2B-ITB-25-0500P_01.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent2" class="stage-content-body2">
+              <img
+                src="/cont/resource/img/guide/mnd/UI-2B-ITB-25-0500P_02.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 48,
+                top: 140
+              },
+              scrollTop: 0,
+              description:
+                '대출계좌 및 실행번호 건별로 납입예정 이자를 조회할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 214,
+                top: 230
+              },
+              scrollTop: 0,
+              description: '조회하고 싶은 대출계좌를 선택해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 214,
+                top: 286
+              },
+              scrollTop: 0,
+              description:
+                '대출계좌에 포함된 실행번호를 직접 입력하거나 [실행번호 검색]을 클릭하여 실행번호를 선택해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 214,
+                top: 359
+              },
+              scrollTop: 0,
+              description:
+                '이자납입기한은 어제 날짜로 기본 설정되어 있습니다. 대출이자 납입 기준일자를 입력해 주세요. 과거날짜만 선택할 수 있습니다.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 391,
+                top: 438
+              },
+              scrollTop: 0,
+              description: '대출계좌 정보를 입력한 후에 [조회]를 클릭해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'changeToScroll',
+              pointer: {
+                left: 44,
+                top: 562
+              },
+              scrollTop: 470,
+              description:
+                '조회한 조건에 대한 납입예정이자 및 납입예정이자 상세조회 내용을 확인할 수 있습니다.'
+            },
+            {
+              index: 6,
+              type: 'scroll',
+              pointer: {
+                left: 44,
+                top: 1005
+              },
+              scrollTop: 790,
+              description:
+                '조회한 대출계좌 상세정보(신규일, 만기일, 대출이율, 대출잔액, 연체여부 등)를 확인할 수 있습니다.'
+            },
+            {
+              index: 7,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 5) {
+          document.getElementById('stageContent2').classList.add('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

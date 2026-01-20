@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+
+    <style>
+      .popup-body {
+        left: 151px;
+        width: 585px;
+        height: 410px;
+      }
+
+      .stage-content-popup {
+        top: 0px;
+      }
+
+      .popup-body-content.step1 {
+        top: 0px;
+      }
+
+      .popup-body-content.step2 {
+        top: -70px;
+      }
+
+      .popup-body-content.step3 {
+        top: -461px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <!-- <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0256P_frame.png"
+                alt=""
+              />
+            </article> -->
+
+            <article id="popup" class="stage-content-popup">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0256P_frame.png"
+                alt=""
+              />
+
+              <!-- 팝업 컨텐츠 영역 -->
+              <div class="popup-body">
+                <!-- 실제 스크롤되는 전체 컨텐츠 이미지 -->
+                <div id="popupContent" class="popup-body-content step1">
+                  <img
+                    src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0256P.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- // 팝업 스크롤 영역 컨테이너 -->
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'popup',
+              pointer: {
+                left: 387,
+                top: 71
+              },
+              scrollTop: 0,
+              description:
+                '스크래핑 동의 후 스크래핑 모듈까지 설치가 완료되면 전자세금계산서 스크래핑이 가능한 팝업을 확인할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'popup',
+              pointer: {
+                left: 409,
+                top: 466
+              },
+              scrollTop: 0,
+              description:
+                '국세청(홈택스)에 등록된 인증서 정보와 조회할 정보를 모두 선택하고 [조회]를 클릭해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'popup',
+              pointer: {
+                left: 206,
+                top: 225
+              },
+              scrollTop: 0,
+              description: '스크래핑으로 전자세금계산서 정보가 조회되었습니다.'
+            },
+            {
+              index: 3,
+              type: 'popup',
+              pointer: {
+                left: 186,
+                top: 292
+              },
+              scrollTop: 0,
+              description:
+                '조회된 내역의 상세정보를 확인하거나 건별로 국세청 진위확인을 진행할 수 있습니다.'
+            },
+            {
+              index: 4,
+              type: 'popup',
+              pointer: {
+                left: 461,
+                top: 544
+              },
+              scrollTop: 0,
+              description:
+                '등록하실 전자세금계산서 내역을 선택하고 [등록]을 클릭해 주세요. 선택한 내역에 대해 국세청 진위확인을 일괄로 진행 후에 등록이 완료됩니다.'
+            },
+            {
+              index: 5,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 0) {
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step1')
+        } else if (_index === 1) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step2')
+        } else if (_index === 2) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step3')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

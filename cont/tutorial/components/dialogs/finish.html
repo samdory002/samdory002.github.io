@@ -1,0 +1,45 @@
+﻿<div class="dialog small">
+  <div class="dialog-header">
+    <h1>
+      <strong data-dialog-menu class="primary"></strong><br />메뉴 체험을
+      완료했어요
+    </h1>
+  </div>
+
+  <div class="dialog-body">
+    <p data-dialog-type="step">
+      <span class="primary" data-dialog-step></span>번째 자동재생이
+      끝났습니다.<br />자동재생을 계속 진행할까요?
+    </p>
+    <p data-dialog-type="menu">다른 메뉴도 확인하시겠어요?</p>
+  </div>
+
+  <div class="dialog-footer">
+    <button
+      type="button"
+      data-dialog-type="step"
+      data-navigate="step-next:stop"
+    >
+      아니오
+    </button>
+    <button
+      type="button"
+      class="primary"
+      data-dialog-type="step"
+      data-navigate="step-next:keep"
+    >
+      예
+    </button>
+    <button type="button" data-dialog-type="menu" data-navigate="menu">
+      메뉴 목록
+    </button>
+    <button
+      type="button"
+      class="primary next"
+      data-dialog-type="menu"
+      data-navigate="menu-next"
+    >
+      다음 메뉴 보기
+    </button>
+  </div>
+</div>

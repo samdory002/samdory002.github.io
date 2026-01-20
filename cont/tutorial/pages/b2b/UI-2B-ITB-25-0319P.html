@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+    <style>
+      .stage-content-body2 {
+        top: 700px;
+      }
+      .stage-content-body3 {
+        top: 1250px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0319P.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent2" class="stage-content-body2">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0320P.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent3" class="stage-content-body3">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0321P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 600,
+                top: 380
+              },
+              scrollTop: 0,
+              description:
+                '채권을 변경하기 위해서는 채권이 ‘발행’ 상태여야 합니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 171,
+                top: 833
+              },
+              scrollTop: 700,
+              description:
+                '변경할 정보를 입력해 주세요. 단, 채권금액과 만기일은 변경할 수 없어요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 461,
+                top: 1261
+              },
+              scrollTop: 700,
+              description: '정보 입력을 완료했다면 [확인]을 클릭해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'changeToScroll',
+              pointer: {
+                left: 50,
+                top: 1323
+              },
+              scrollTop: 1250,
+              description:
+                '변경할 정보를 한번 더 확인하고, 체크박스를 선택해 변경 진행에 동의해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 462,
+                top: 1807
+              },
+              scrollTop: 1250,
+              description:
+                'OTP 번호를 입력한 후 [확인]을 클릭해 인증을 완료해 주세요.'
+            },
+            {
+              index: 6,
+              type: 'changeToScroll',
+              pointer: {
+                left: 268,
+                top: 1594
+              },
+              scrollTop: 1250,
+              description:
+                '채권 변경을 완료했습니다. 결재사용자의 경우 변경요청이 완료됩니다.'
+            },
+            {
+              index: 7,
+              type: 'scroll',
+              pointer: {
+                left: 382,
+                top: 1717
+              },
+              scrollTop: 1250,
+              description: '[확인]을 클릭해 이동해 주세요.'
+            },
+            {
+              index: 8,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 3) {
+          document.getElementById('stageContent2').classList.add('on')
+        }
+        if (_index === 6) {
+          document.getElementById('stageContent3').classList.add('on')
+          document.getElementById('stageContent2').classList.remove('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

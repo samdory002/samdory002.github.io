@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/inq/UI-2B-ITB-25-0022P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 41,
+                top: 491
+              },
+              scrollTop: 0,
+              description:
+                '거래내역 대량조회 신청을 완료했습니다. 신청한 거래내역은 다음날 08:00부터 다운로드할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 452,
+                top: 619
+              },
+              scrollTop: 70,
+              description:
+                '[신청결과]를 클릭해 신청결과 확인 및 파일 다운로드를 진행할 수 있습니다.'
+            },
+            {
+              index: 2,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

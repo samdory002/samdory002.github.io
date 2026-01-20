@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+    <style>
+      .stage-content-body2 {
+        top: 610px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0308P.png"
+                alt=""
+              />
+            </article>
+            <article id="stageContent2" class="stage-content-body2">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0309P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 294,
+                top: 1156
+              },
+              scrollTop: 610,
+              description:
+                '이번에는 채권 취소요청/거절을 진행해 볼게요. 내역을 선택한 후 [취소요청/거절]을 클릭해 주세요.'
+            },
+            {
+              index: 1,
+              type: 'changeToScroll',
+              pointer: {
+                left: 584,
+                top: 1522
+              },
+              scrollTop: 1140,
+              description:
+                '판매기업이 먼저 취소요청 했다면 판매기업 취소동의일이 표시됩니다.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 56,
+                top: 1608
+              },
+              scrollTop: 1140,
+              description:
+                '선택한 채권 정보를 확인한 후 취소 진행 동의 체크박스를 선택해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 462,
+                top: 2109
+              },
+              scrollTop: 1565,
+              description:
+                'OTP 번호 입력 후 [확인]을 클릭해 인증을 완료해 주세요. 판매기업의 동의 후 채권취소 완료돼요. 판매기업이 먼저 취소요청한 경우에는 구매기업에서 취소 동의시 채권취소 완료됩니다.'
+            },
+            {
+              index: 4,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 1) {
+          document.getElementById('stageContent2').classList.add('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

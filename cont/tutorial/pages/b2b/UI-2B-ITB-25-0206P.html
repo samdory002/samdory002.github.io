@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0206P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 268,
+                top: 343
+              },
+              scrollTop: 0,
+              description:
+                '판매기업 신규약정 완료 화면입니다. 해당 단계에서는 ‘만기입금약정’ 까지만 완료된 상태이며, 만기전 할인(대출)한도를 신청했을 경우 [만기전 할인(대출) 신청]을 클릭해야 대출한도 신청까지 완료됩니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 149,
+                top: 491
+              },
+              scrollTop: 200,
+              description:
+                '약정을 진행한 구매기업정보와 약정등록정보를 확인해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 181,
+                top: 856
+              },
+              scrollTop: 530,
+              description:
+                '만기전 할인(대출)약정 시에만 보여지는 내용이며, 신청한 대출한도 및 인지세 정보를 확인할 수 있습니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 261,
+                top: 1088
+              },
+              scrollTop: 530,
+              description:
+                '[판매기업 등록결과 확인서] 클릭 시, 판매기업 등록결과 확인서 내용을 확인하고 필요 시 확인서를 인쇄할 수 있습니다.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 468,
+                top: 1088
+              },
+              scrollTop: 530,
+              description:
+                '만기전 할인(대출) 약정을 진행했을 경우 [만기전 할인(대출) 신청]을 필수로 클릭해 주세요. 해당 버튼을 클릭한 경우에만 대출한도 신청이 진행되며 처리결과 확인 화면으로 이동합니다.'
+            },
+            {
+              index: 5,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

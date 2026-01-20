@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0205P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 374,
+                top: 216
+              },
+              scrollTop: 0,
+              description:
+                '약정서 동의 화면에서는 약정서를 차례로 확인하고 동의를 진행해 주세요. (구매기업의 약정상품종류, 대출한도 신청여부, 법인/개인사업자 여부에 따라 약정서 목록과 내용이 달라질 수 있습니다.)'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 42,
+                top: 1121
+              },
+              scrollTop: 1040,
+              description:
+                '상품별 통합약정서 등 필수 확인이 필요한 약관은 개별적으로 클릭하여 팝업 내용을 확인하고, 관련된 동의 체크박스를 클릭해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 42,
+                top: 1286
+              },
+              scrollTop: 1040,
+              description:
+                '외담대 WR(상환청구권 있는) 약정 진행 시, 내용을 충분히 읽고 ‘본인에게 대출금 상환의무가 있음’ 문구를 직접 입력해 주세요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 52,
+                top: 1903
+              },
+              scrollTop: 1520,
+              description:
+                '상품 약정에 포함된 모든 약정서 내용을 꼼꼼하게 확인하고 동의 체크박스를 클릭해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 52,
+                top: 3746
+              },
+              scrollTop: 3485,
+              description:
+                '기업대출 상품설명서에 포함된 ‘계약체결 전 중요사항 안내여부 확인’ 내용을 읽고 각각의 항목에 체크를 진행해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'scroll',
+              pointer: {
+                left: 332,
+                top: 4142
+              },
+              scrollTop: 4037,
+              description:
+                '[금융거래 계약서류 전체 다운로드] 클릭 시, 약정중인 상품에 해당하는 서류가 PDF 파일로 다운로드됩니다.'
+            },
+            {
+              index: 6,
+              type: 'scroll',
+              pointer: {
+                left: 128,
+                top: 4213
+              },
+              scrollTop: 4037,
+              description:
+                '본 약정에 대한 약관 등 주요내용 설명사항을 이해하였고 계약서류 다운로드를 교부받았음을 확인하는 동의 체크박스를 클릭해 주세요.'
+            },
+            {
+              index: 7,
+              type: 'scroll',
+              pointer: {
+                left: 292,
+                top: 4367
+              },
+              scrollTop: 4037,
+              description: 'OTP 번호를 입력해 주세요.'
+            },
+            {
+              index: 8,
+              type: 'scroll',
+              pointer: {
+                left: 461,
+                top: 4599
+              },
+              scrollTop: 4037,
+              description:
+                '[확인] 클릭 시, 인증서 인증 진행 후 약정완료 화면으로 이동합니다.'
+            },
+            {
+              index: 9,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

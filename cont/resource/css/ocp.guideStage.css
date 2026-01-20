@@ -1,0 +1,288 @@
+/** 폰트 */
+.text-B4-B-14 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+}
+#stage {
+  width: 884px;
+  height: 696px;
+  padding: 4px;
+  border-radius: 16px;
+  background-color: #009178;
+}
+.stage-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.stage-frame {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 632px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.stage-frame > .stage-content {
+  position: absolute;
+  margin-top: -4px;
+  top: 0px;
+  left: -4px;
+  width: calc(100% + 8px);
+  height: auto;
+  transition: top 0.3s ease;
+}
+
+.stage-frame > .stage-content > article.stage-content-body {
+  position: relative;
+}
+
+.stage-controls {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 60px;
+  padding: 4px 24px 0 24px;
+}
+
+.stage-controls > .stage-controls-buttons {
+  width: 116px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.stage-controls > .stage-controls-buttons > button {
+  width: 32px;
+  height: 32px;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-pause {
+  background: url(/cont/resource/img/guide/icon_pause.png) no-repeat center /
+    contain;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-pause.on {
+  display: block;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-pause.off {
+  display: none;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-play {
+  background: url(/cont/resource/img/guide/icon_play.png) no-repeat center /
+    contain;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-play.on {
+  display: block;
+}
+
+.stage-controls > .stage-controls-buttons > button.btn-play.off {
+  display: none;
+}
+
+.stage-controls > .stage-controls-buttons > span {
+  color: #fff;
+}
+
+.stage-controls > .stage-controls-progress {
+  width: calc(100% - 116px);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.stage-controls > .stage-controls-progress > .progress-bar {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.stage-controls
+  > .stage-controls-progress
+  > .progress-bar
+  > .progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #ffc800;
+  border-radius: 3px;
+  transition: width 0.3s linear;
+}
+.stage-controls > .stage-controls-progress > .progress-bar > .progress-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.stage-controls
+  > .stage-controls-progress
+  > .progress-bar
+  > .progress-divider
+  > .progress-divider-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background-color: #009178;
+}
+.stage-controls
+  > .stage-controls-progress
+  > .progress-bar
+  > .progress-divider
+  > .progress-divider-item:first-child {
+  display: none;
+}
+.stage-controls
+  > .stage-controls-progress
+  > .progress-bar
+  > .progress-divider
+  > .progress-divider-item:last-child {
+  display: none;
+}
+
+@keyframes touchPointPulse {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(-50%) scale(0.7);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-50%) scale(1);
+  }
+}
+
+.touch-point {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  transform: translateX(-50%) translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  background-color: #ed225f;
+}
+
+.touch-point:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 15px;
+  left: 15px;
+  width: 56px;
+  height: 56px;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: rgba(237, 34, 95, 0.24);
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.24);
+  animation: touchPointPulse 2s ease-in-out infinite;
+  pointer-events: none;
+}
+
+.touch-point.on {
+  display: block;
+}
+
+.touch-point > button {
+  width: 100%;
+  height: 100%;
+}
+
+.stage-content-popup {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  display: none;
+}
+
+.stage-content-popup.on {
+  display: block;
+}
+
+.popup-body {
+  position: absolute;
+  top: 100px;
+  left: 104px;
+  width: 675px;
+  height: 408px;
+  overflow: hidden;
+}
+
+.popup-body-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: top 0.3s ease;
+}
+
+.stage-content-body1,
+.stage-content-body2,
+.stage-content-body3,
+.stage-content-body4,
+.stage-content-body5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.stage-content-body2 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stage-content-body2.on {
+  opacity: 1;
+}
+
+.stage-content-body3 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stage-content-body3.on {
+  opacity: 1;
+}
+
+.stage-content-body4 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stage-content-body4.on {
+  opacity: 1;
+}
+
+.stage-content-body5 {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stage-content-body5.on {
+  opacity: 1;
+}

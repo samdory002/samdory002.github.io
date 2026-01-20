@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0300P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 45,
+                top: 432
+              },
+              scrollTop: 0,
+              description:
+                '채권 발행 방법을 선택해 주세요. 화면에서 직접 등록하거나, 미리 작성된 파일을 업로드하여 등록할 수 있습니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 470,
+                top: 652
+              },
+              scrollTop: 450,
+              description: '채권을 발행하려는 중심업체코드를 선택해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 159,
+                top: 939
+              },
+              scrollTop: 450,
+              description:
+                '필수입력항목을 모두 입력해 주세요. 판매기업을 입력하면 판매기업 사업자등록번호는 자동으로 입력됩니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 461,
+                top: 1807
+              },
+              scrollTop: 1245,
+              description:
+                '[추가]를 클릭해 작성한 내용을 신청 내역에 추가해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 400,
+                top: 2462
+              },
+              scrollTop: 1900,
+              description:
+                '신청 내역이 정상적으로 추가됐다면 채권 발행 내용에 동의한 뒤 [등록]을 클릭해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'scroll',
+              pointer: {
+                left: 462,
+                top: 2868
+              },
+              scrollTop: 2310,
+              description:
+                'OTP 번호를 입력하고 [확인]을 클릭해 인증을 완료해 주세요.'
+            },
+            {
+              index: 6,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0203P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 392,
+                top: 218
+              },
+              scrollTop: 0,
+              description:
+                '「금융소비자 보호에 관한 법률」에 의거 대출약정 신청 시 적합성∙적정성 확인서 작성이 필요합니다. (만기입금약정으로 약정 시 생략)'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 239,
+                top: 875
+              },
+              scrollTop: 700,
+              description:
+                '법인사업자는 전문금융소비자와 일반금융소비자 중 선택하여 진행할 수 있습니다. 전문금융소비자 선택 시에는 영업점 앞으로 전문금융소비자임을 증빙할 수 있는 서류 제출이 필요합니다.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 239,
+                top: 1048
+              },
+              scrollTop: 990,
+              description:
+                '개인사업자 또는 법인사업자 중 일반금융소비자를 선택한 경우에는 추가 항목도 모두 입력해야 합니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 55,
+                top: 1658
+              },
+              scrollTop: 1335,
+              description:
+                '적합성∙적정성 관련 내용을 읽고 체크박스를 클릭하여 동의해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 382,
+                top: 2305
+              },
+              scrollTop: 1740,
+              description:
+                'OTP 번호를 입력한 후 [제출]을 클릭하여 인증을 진행하고 진단결과를 확인해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

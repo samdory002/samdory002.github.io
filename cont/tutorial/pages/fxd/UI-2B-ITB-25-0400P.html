@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+
+    <style>
+      .popup-body {
+        left: 151px;
+        width: 585px;
+        height: 410px;
+      }
+      .stage-content-popup {
+        top: 1350px;
+      }
+      .popup-body-content {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition:
+          opacity 0.3s ease,
+          top 0.3s ease;
+      }
+
+      .popup-body-content.on {
+        display: block;
+        opacity: 1;
+      }
+
+      .popup-body-content.step1 {
+        top: 0px;
+      }
+
+      .popup-body-content.step2 {
+        top: 0px;
+      }
+
+      .popup-body-content.step3 {
+        top: 0px;
+      }
+
+      .popup-body-content.step4 {
+        top: -210px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0400P.png"
+                alt=""
+              />
+            </article>
+
+            <article id="popup" class="stage-content-popup">
+              <img
+                src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0401P_frame.png"
+                alt=""
+              />
+
+              <!-- 팝업 컨텐츠 영역 -->
+              <div class="popup-body">
+                <!-- 실제 스크롤되는 전체 컨텐츠 이미지 -->
+                <div id="popupContent1" class="popup-body-content step1">
+                  <img
+                    src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0401P.png"
+                    alt=""
+                  />
+                </div>
+                <div id="popupContent2" class="popup-body-content step2">
+                  <img
+                    src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0402P.png"
+                    alt=""
+                  />
+                </div>
+                <div id="popupContent3" class="popup-body-content step3">
+                  <img
+                    src="/cont/resource/img/guide/fxd/UI-2B-ITB-25-0403P.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- // 팝업 스크롤 영역 컨테이너 -->
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 176,
+                top: 459
+              },
+              scrollTop: 0,
+              description:
+                '보내는 분 정보를 확인해 주세요.\n영문명, 주소 변경은 영업점에서 할 수 있어요.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 203,
+                top: 795
+              },
+              scrollTop: 620,
+              description:
+                '송금신청영업점과 송금을 보내는 사유를 선택해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 267,
+                top: 1157
+              },
+              scrollTop: 990,
+              description:
+                '[자주쓰는 송금]으로 등록하신 내역이에요. [자주쓰는 송금]을 등록하면 간편하게 받는 분 정보를 입력할 수 있어요.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 649,
+                top: 1453
+              },
+              scrollTop: 1350,
+              description:
+                '받는 분 정보를 불러와서 입력해 볼게요. [송금(정보)내역 불러오기]를 클릭해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'popup',
+              pointer: {
+                left: 189,
+                top: 1477
+              },
+              scrollTop: 1350,
+              description:
+                '[보낸송금 내역]에서는 최근 1년간\n송금한 내역을 조회할 수 있어요.'
+            },
+            {
+              index: 5,
+              type: 'popup',
+              pointer: {
+                left: 299,
+                top: 1477
+              },
+              scrollTop: 1350,
+              description:
+                '[사전등록 송금정보]에서는 기업인터넷뱅킹 ‘송금정보사전등록’ 메뉴에서 등록한 송금정보와 영업점에서 등록한 송금정보 내역을 조회할 수 있어요.'
+            },
+            {
+              index: 6,
+              type: 'popup',
+              pointer: {
+                left: 433,
+                top: 1477
+              },
+              scrollTop: 1350,
+              description:
+                '기업뱅킹 송금신청 내역에서는 최근 3개월 이내 기업뱅킹을 통해 신청한 내역을 조회할 수 있어요.'
+            },
+            {
+              index: 7,
+              type: 'popup',
+              pointer: {
+                left: 458,
+                top: 1882
+              },
+              scrollTop: 1350,
+              description: '조회한 내역을 선택한 후 [확인]을 클릭해 주세요.'
+            },
+            {
+              index: 8,
+              type: 'scroll',
+              pointer: {
+                left: 169,
+                top: 1551
+              },
+              scrollTop: 1350,
+              description:
+                '송금(정보)내역 불러오기 화면에서 선택한 내역의 송금 정보를 불러왔어요.'
+            },
+            {
+              index: 9,
+              type: 'scroll',
+              pointer: {
+                left: 807,
+                top: 2668
+              },
+              scrollTop: 2625,
+              description:
+                '송금경유 은행정보 입력이 필요한 경우\n[∨]를 클릭하면 입력할 수 있어요.'
+            },
+            {
+              index: 10,
+              type: 'scroll',
+              pointer: {
+                left: 172,
+                top: 2810
+              },
+              scrollTop: 2625,
+              description:
+                '송금기준을 선택한 후 선택한 송금기준에 맞게 출금계좌, 계좌비밀번호를 입력해 주세요. 원화계좌를 이용하시는 경우 [예상출금액]을 클릭해 조회해 주세요.'
+            },
+            {
+              index: 11,
+              type: 'scroll',
+              pointer: {
+                left: 172,
+                top: 3216
+              },
+              scrollTop: 3070,
+              description: '수수료 부담자 및 수수료 납부계좌를 선택해 주세요.'
+            },
+            {
+              index: 12,
+              type: 'scroll',
+              pointer: {
+                left: 172,
+                top: 3541
+              },
+              scrollTop: 3070,
+              description:
+                '예약송금을 원하실 경우 신청을 클릭해 주세요.\n송금예정일은 다음 영업일~1개월 이내로 입력할 수 있습니다.'
+            },
+            {
+              index: 13,
+              type: 'scroll',
+              pointer: {
+                left: 378,
+                top: 3638
+              },
+              scrollTop: 3205,
+              description:
+                '작성을 완료했다면 [추가]를 클릭해\n주세요. 아래 송금 신청내역에 작성한 내역이 추가 돼요.'
+            },
+            {
+              index: 14,
+              type: 'scroll',
+              pointer: {
+                left: 382,
+                top: 4307
+              },
+              scrollTop: 3750,
+              description:
+                '송금을 신청할 내역을 선택한 후 [송금신청]을 클릭해 주세요.'
+            },
+            {
+              index: 15,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 4) {
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent1').classList.add('on')
+        } else if (_index === 5) {
+          document.getElementById('popupContent1').classList.remove('on')
+
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent2').classList.add('on')
+        } else if (_index === 6) {
+          document.getElementById('popupContent2').classList.remove('on')
+
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent3').classList.add('on')
+        } else if (_index === 7) {
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent3').classList.add('step4')
+        } else if (_index === 8) {
+          document.getElementById('popup').classList.remove('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

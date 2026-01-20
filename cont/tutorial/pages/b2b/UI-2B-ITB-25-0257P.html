@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+
+    <style>
+      .popup-body {
+        left: 151px;
+        width: 585px;
+        height: 410px;
+      }
+      .stage-content-popup {
+        top: 0px;
+      }
+
+      .popup-body-content.step1 {
+        top: 0px;
+      }
+
+      .popup-body-content.step2 {
+        top: -360px;
+      }
+
+      .popup-body-content.step3 {
+        top: -760px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0257P.png"
+                alt=""
+              />
+            </article>
+
+            <article id="popup" class="stage-content-popup">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0258P_frame.png"
+                alt=""
+              />
+
+              <!-- 팝업 컨텐츠 영역 -->
+              <div class="popup-body">
+                <!-- 실제 스크롤되는 전체 컨텐츠 이미지 -->
+                <div id="popupContent" class="popup-body-content step1">
+                  <img
+                    src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0258P.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- // 팝업 스크롤 영역 컨테이너 -->
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 744,
+                top: 240
+              },
+              scrollTop: 0,
+              description:
+                '다음은 직접 등록으로 세금계산서를 등록합니다. [직접 등록]을 클릭해 주세요.'
+            },
+            {
+              index: 1,
+              type: 'popup',
+              pointer: {
+                left: 272,
+                top: 61
+              },
+              scrollTop: 0,
+              description:
+                '직접 등록에서는 엑셀 양식을 다운로드 받아 등록하는 파일등록 방식과, 직접 항목을 입력해서 등록하는 직접입력 등록 방식이 있습니다.'
+            },
+            {
+              index: 2,
+              type: 'popup',
+              pointer: {
+                left: 189,
+                top: 142
+              },
+              scrollTop: 0,
+              description:
+                '엑셀 양식을 다운로드 받은 후 내역을 작성하여 파일을 등록하는 방식으로 진행할 수 있습니다.'
+            },
+            {
+              index: 3,
+              type: 'popup',
+              pointer: {
+                left: 189,
+                top: 294
+              },
+              scrollTop: 0,
+              description:
+                '직접입력 등록으로 진행하실 경우 필수정보를 모두 입력해 주세요.'
+            },
+            {
+              index: 4,
+              type: 'popup',
+              pointer: {
+                left: 459,
+                top: 466
+              },
+              scrollTop: 0,
+              description: '모두 입력하신 후 [추가]를 클릭해 주세요.'
+            },
+            {
+              index: 5,
+              type: 'popup',
+              pointer: {
+                left: 185,
+                top: 256
+              },
+              scrollTop: 0,
+              description:
+                '파일로 등록한 내역이나 직접입력으로 추가한 내역이 하단 영역에 추가됩니다.'
+            },
+            {
+              index: 6,
+              type: 'popup',
+              pointer: {
+                left: 350,
+                top: 473
+              },
+              scrollTop: 0,
+              description:
+                '국세청 진위여부를 일괄로 확인하고 등록하고 싶으시면 체크박스를 클릭해 주세요.'
+            },
+            {
+              index: 7,
+              type: 'popup',
+              pointer: {
+                left: 403,
+                top: 544
+              },
+              scrollTop: 0,
+              description:
+                '모든 내역이 추가되었으면 [등록완료]를 클릭해 주세요.'
+            },
+            {
+              index: 8,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 1) {
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step1')
+        } else if (_index === 4) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step2')
+        } else if (_index === 5) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step3')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

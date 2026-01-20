@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+
+    <style>
+      .stage-content-popup {
+        top: 1460px;
+      }
+
+      .popup-body-content.step1 {
+        top: 0px;
+      }
+
+      .popup-body-content.step2 {
+        top: -416px;
+      }
+
+      .popup-body-content.step3 {
+        top: -530px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0210P.png"
+                alt=""
+              />
+            </article>
+
+            <article id="popup" class="stage-content-popup">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0211P_frame.png"
+                alt=""
+              />
+
+              <!-- 팝업 컨텐츠 영역 -->
+              <div class="popup-body">
+                <!-- 실제 스크롤되는 전체 컨텐츠 이미지 -->
+                <div id="popupContent" class="popup-body-content step1">
+                  <img
+                    src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0211P.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- // 팝업 스크롤 영역 컨테이너 -->
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 191,
+                top: 363
+              },
+              scrollTop: 10,
+              description:
+                '앞에서 선택한 대출을 실행할 채권의 내역을 확인할 수 있습니다.\n대출실행을 위해서는 각 채권을 선택하여 대출실행정보입력 및 세금계산서 정보연결이 필요합니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 59,
+                top: 449
+              },
+              scrollTop: 10,
+              description:
+                '각 채권을 선택할 경우 화면 하단으로 외상매출채권정보와 대출실행정보 입력 영역이 펼쳐집니다.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 40,
+                top: 718
+              },
+              scrollTop: 620,
+              description:
+                '선택한 채권의 외상매출채권 및 대출현황 정보를 확인할 수 있습니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 40,
+                top: 1121
+              },
+              scrollTop: 860,
+              description:
+                '대출실행정보 입력 영역에서 대출신청금액과 대출실행일, 거래품목명을 입력해 주세요. (예약대출인 경우 대출실행일을 미래일로 선택해 주세요.)'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 753,
+                top: 1428
+              },
+              scrollTop: 860,
+              description:
+                '[예정이자조회] 버튼 클릭 시, 입력한 대출신청금액과 대출실행일을 기준으로 예정이자 정보를 팝업으로 확인할 수 있습니다.'
+            },
+            {
+              index: 5,
+              type: 'scroll',
+              pointer: {
+                left: 675,
+                top: 1636
+              },
+              scrollTop: 1460,
+              description:
+                '대출실행을 위해서는 채권 정보 및 대출신청금액에 맞게 세금계산서 금액 연결이 필요합니다.\n[세금계산서 정보연결] 버튼 선택 시, 팝업 내에서 대출 신청금액과 세금계산서의 금액을 연결할 수 있습니다.'
+            },
+            {
+              index: 6,
+              type: 'popup',
+              pointer: {
+                left: 183,
+                top: 1600
+              },
+              scrollTop: 1460,
+              description:
+                '해당 채권으로 대출을 실행하려는 금액과 이미 연결되어있는 세금계산서 연결금액 정보를 확인할 수 있습니다.\n(연결 필요금액 = 대출 실행금액 - 기 세금계산서 연결금액)'
+            },
+            {
+              index: 7,
+              type: 'scroll',
+              pointer: {
+                left: 403,
+                top: 1922
+              },
+              scrollTop: 1460,
+              description:
+                '하나은행에 등록된 세금계산서 정보를 조회하려면 조회하려는 옵션을 모두 선택하고 [조회] 버튼을 선택해 주세요.\n(등록된 정보가 없을 경우 추가로 등록이 필요합니다.)'
+            },
+            {
+              index: 8,
+              type: 'scroll',
+              pointer: {
+                left: 156,
+                top: 1707
+              },
+              scrollTop: 1460,
+              description:
+                '등록된 세금계산서 중, 채권의 구매기업/판매기업 정보와 일치하는 내역을 확인할 수 있습니다.\n채권과 연결할 세금계산서를 선택하여 세금계산서 정보연결을 진행해 주세요.'
+            },
+            {
+              index: 9,
+              type: 'scroll',
+              pointer: {
+                left: 538,
+                top: 1917
+              },
+              scrollTop: 1460,
+              description:
+                '기존에 등록된 세금계산서가 없다면 [국세청(홈택스) 스크래핑] 또는 [직접 등록] 버튼을 선택하여 추가로 등록해 주세요.'
+            },
+            {
+              index: 10,
+              type: 'scroll',
+              pointer: {
+                left: 446,
+                top: 1998
+              },
+              scrollTop: 1460,
+              description:
+                '대출을 신청한 금액에 맞게 세금계산서 정보를 연결한 후, [세금계산서 정보연결] 버튼을 선택해 주세요.'
+            },
+            {
+              index: 11,
+              type: 'scroll',
+              pointer: {
+                left: 39,
+                top: 1780
+              },
+              scrollTop: 1460,
+              description:
+                '세금계산서 정보연결 팝업에서 연결한 세금계산서 정보가 목록에 등록되었습니다.'
+            },
+            {
+              index: 12,
+              type: 'scroll',
+              pointer: {
+                left: 604,
+                top: 1873
+              },
+              scrollTop: 1460,
+              description:
+                '세금계산서를 선택 후, [금융결제원 조회] 버튼 선택 시 해당 세금계산서로 기존에 다른 대출을 실행하였는지 사용여부를 확인할 수 있습니다.'
+            },
+            {
+              index: 13,
+              type: 'scroll',
+              pointer: {
+                left: 390,
+                top: 1929
+              },
+              scrollTop: 1460,
+              description:
+                '대출실행정보 입력과 세금계산서 정보연결이 모두 완료되면, [등록] 버튼을 눌러주세요.'
+            },
+            {
+              index: 14,
+              type: 'scroll',
+              pointer: {
+                left: 39,
+                top: 395
+              },
+              scrollTop: 10,
+              description:
+                '입력한 대출실행정보와 세금계산서 연결정보가 등록됩니다.\n다건으로 채권 대출실행 시, 모든 채권을 각각 선택하여 등록을 진행해 주세요.'
+            },
+            {
+              index: 15,
+              type: 'scroll',
+              pointer: {
+                left: 455,
+                top: 591
+              },
+              scrollTop: 10,
+              description:
+                '모든 채권에 정보가 입력되었으면 [대출실행] 버튼을 선택해 주세요.'
+            },
+            {
+              index: 16,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 6) {
+          document.getElementById('popup').classList.add('on')
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step1')
+        } else if (_index === 8) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step2')
+        } else if (_index === 9) {
+          document.getElementById('popupContent').className =
+            'popup-body-content'
+          document.getElementById('popupContent').classList.add('step3')
+        } else if (_index === 11) {
+          document.getElementById('popup').classList.remove('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

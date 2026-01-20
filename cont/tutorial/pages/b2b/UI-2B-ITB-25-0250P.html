@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article id="stageContent1" class="stage-content-body1">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0250P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 200,
+                top: 272
+              },
+              scrollTop: 0,
+              description: '2차 협력기업 신규약정 완료 화면입니다.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 44,
+                top: 523
+              },
+              scrollTop: 450,
+              description:
+                '판매기업 약정등록 정보와 입금계좌정보를 확인해 주세요.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 293,
+                top: 1011
+              },
+              scrollTop: 450,
+              description:
+                '[등록결과 확인서]를 클릭하면, 판매기업 등록결과 확인서 내용을 확인하고 필요 시 확인서를 인쇄할 수 있습니다.'
+            },
+            {
+              index: 3,
+              type: 'scroll',
+              pointer: {
+                left: 452,
+                top: 1011
+              },
+              scrollTop: 450,
+              description:
+                '[약정조회/관리/를 클릭하면 약정정보 조회/화인서 출력 메뉴로 이동하게 됩니다.'
+            },
+            {
+              index: 4,
+              type: 'scroll',
+              pointer: {
+                left: 811,
+                top: 1157
+              },
+              scrollTop: 600,
+              description:
+                'B2B상생벤더구매론 추가 약정을 희망하실 경우 [→]를 클릭해 B2B약정등록/변경/해지/조회 메뉴로 이동할 수 있습니다.'
+            },
+            {
+              index: 5,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-control" content="No-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta http-equiv="Pragma" content="No-cache" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>기업뱅킹 이용가이드</title>
+
+    <!-- 이용가이드 CSS -->
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guide.css" />
+    <link rel="stylesheet" href="/cont/resource/css/ocp.guideStage.css" />
+
+    <style>
+      .stage-content-popup {
+        top: 615px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="stage">
+      <div class="stage-box">
+        <div class="stage-frame">
+          <div id="stageContent" class="stage-content">
+            <article class="stage-content-body">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0316P.png"
+                alt=""
+              />
+            </article>
+
+            <article id="popup" class="stage-content-popup">
+              <img
+                src="/cont/resource/img/guide/b2b/UI-2B-ITB-25-0317P.png"
+                alt=""
+              />
+            </article>
+
+            <div id="touchPoint" class="touch-point">
+              <button type="button"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="stage-controls">
+          <div class="stage-controls-buttons">
+            <button type="button" id="btn-play" class="btn-play on"></button>
+            <button type="button" id="btn-pause" class="btn-pause off"></button>
+            <span class="text-B4-B-14">자동재생</span>
+          </div>
+          <div class="stage-controls-progress">
+            <div id="progress-bar" class="progress-bar">
+              <div id="progress-bar-fill" class="progress-bar-fill"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/cont/resource/js/ocp.guideStage.js"></script>
+    <script>
+      var stageObj = {
+        data: {
+          process: [
+            {
+              index: 0,
+              type: 'default',
+              pointer: {
+                left: 394,
+                top: 537
+              },
+              scrollTop: 0,
+              description:
+                '약정상품과 결제일을 선택한 후 [조회]를 클릭해 주세요.'
+            },
+            {
+              index: 1,
+              type: 'scroll',
+              pointer: {
+                left: 305,
+                top: 743
+              },
+              scrollTop: 615,
+              description:
+                '조회된 선결제 신청건의 신청 일련번호를 클릭해 주시면 아래에서 채권별 선결제 처리결과 내역을 확인할 수 있습니다.\n“결제상태”를 꼭 확인하여 채권결제 완료여부를 점검해야 합니다.'
+            },
+            {
+              index: 2,
+              type: 'scroll',
+              pointer: {
+                left: 781,
+                top: 1092
+              },
+              scrollTop: 615,
+              description:
+                '상세처리결과 내역 선택 후 [상세조회]를 클릭하면 선결제 정보와 채권 정보를 자세히 확인할 수 있습니다.'
+            },
+            {
+              index: 3,
+              type: 'popup',
+              pointer: {
+                left: 339,
+                top: 689
+              },
+              scrollTop: 0,
+              description: '진행한 선결제 내역의 상세정보를 확인할 수 있습니다.'
+            },
+            {
+              index: 4,
+              type: 'end',
+              scrollTop: 0
+            }
+          ]
+        }
+      }
+
+      document.addEventListener('processChange', function (event) {
+        var _current = event.detail.current
+        var _index = event.detail.index
+        var _total = event.detail.total
+        console.log(
+          '화면 이벤트 리스너 - 현재 단계:',
+          _current,
+          '/ 전체:',
+          _total,
+          '/ 인덱스:',
+          _index
+        )
+
+        if (_index === 3) {
+          document.getElementById('popup').classList.add('on')
+        }
+      })
+
+      GUIDE_STAGE.init(stageObj)
+    </script>
+  </body>
+</html>

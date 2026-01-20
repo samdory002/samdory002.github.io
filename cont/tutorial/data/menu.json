@@ -1,0 +1,1319 @@
+﻿{
+  "pages": [
+    {
+      "pageId": "inq0000",
+      "category": "조회",
+      "title": "보유계좌 조회",
+      "pdfUrl": "https://test",
+      "info": "보유한 계좌의 잔액과 계좌정보를 확인할 수 있습니다.",
+      "steps": [
+        {
+          "id": "inq0001",
+          "title": "조회",
+          "page": "inq/UI-2B-ITB-25-0001P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "inq0100",
+      "category": "조회",
+      "title": "거래내역 조회",
+      "pdfUrl": "https://test",
+      "info": "계좌별 거래내역을 확인할 수 있습니다.\n메모를 추가하거나 거래내역확인증을 출력할 수 있습니다.",
+      "steps": [
+        {
+          "id": "inq0101",
+          "title": "조회",
+          "page": "inq/UI-2B-ITB-25-0010P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "inq0200",
+      "category": "조회",
+      "title": "거래내역 대량조회",
+      "pdfUrl": "https://test",
+      "info": "최대 5개 입출금계좌의 거래내역을\n대량으로 조회할 수 있는 서비스입니다.\n신청 후 다음날 08:00시부터 파일을 다운로드 받으실 수 있습니다.",
+      "steps": [
+        {
+          "id": "inq0201",
+          "title": "신청",
+          "page": "inq/UI-2B-ITB-25-0020P.html"
+        },
+        {
+          "id": "inq0202",
+          "title": "정보확인 및 실행",
+          "page": "inq/UI-2B-ITB-25-0021P.html"
+        },
+        {
+          "id": "inq0203",
+          "title": "완료",
+          "page": "inq/UI-2B-ITB-25-0022P.html"
+        },
+        {
+          "id": "inq0204",
+          "title": "신청결과 확인",
+          "page": "inq/UI-2B-ITB-25-0023P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "inq0300",
+      "category": "조회",
+      "title": "발급신청",
+      "pdfUrl": "https://test",
+      "info": "부채증명서, 금융거래확인서, 잔액증명서 중\n원하는 증명서를 한번에 발급신청할 수 있습니다.",
+      "steps": [
+        {
+          "id": "inq0301",
+          "title": "증명서 선택",
+          "page": "inq/UI-2B-ITB-25-0030P.html"
+        },
+        {
+          "id": "inq0302",
+          "title": "정보입력",
+          "page": "inq/UI-2B-ITB-25-0031P.html"
+        },
+        {
+          "id": "inq0303",
+          "title": "완료",
+          "page": "inq/UI-2B-ITB-25-0032P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "inq0400",
+      "category": "조회",
+      "title": "신청결과 확인",
+      "pdfUrl": "https://test",
+      "info": "발급신청한 증명서의 발급결과를 확인할 수 있습니다.",
+      "steps": [
+        {
+          "id": "inq0401",
+          "title": "신청결과조회",
+          "page": "inq/UI-2B-ITB-25-0040P.html"
+        },
+        {
+          "id": "inq0402",
+          "title": "수수료납부",
+          "page": "inq/UI-2B-ITB-25-0041P.html"
+        },
+        {
+          "id": "inq0403",
+          "title": "완료",
+          "page": "inq/UI-2B-ITB-25-0042P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0000",
+      "category": "이체",
+      "title": "즉시/예약이체",
+      "pdfUrl": "https://test",
+      "info": "즉시이체와 예약이체 중 이체방식을 선택하여 이체할 수 있습니다.\n최대 10건까지 이체할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0001",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0101P.html"
+        },
+        {
+          "id": "trn0002",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0102P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0100",
+      "category": "이체",
+      "title": "다계좌이체",
+      "pdfUrl": "https://test",
+      "info": "다게좌이체는 한번에 최대 20개의 계좌로\n빠르게 이체할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0101",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0110P.html"
+        },
+        {
+          "id": "trn0102",
+          "title": "정보확인 및 실행",
+          "page": "trn/UI-2B-ITB-25-0112P.html"
+        },
+        {
+          "id": "trn0103",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0113P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0200",
+      "category": "이체",
+      "title": "예약이체\n신청내역 조회/취소",
+      "pdfUrl": "https://test",
+      "info": "예약이체 신청한 내역을 조회하거나 취소할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0201",
+          "title": "조회",
+          "page": "trn/UI-2B-ITB-25-0120P.html"
+        },
+        {
+          "id": "trn0202",
+          "title": "취소 완료",
+          "page": "trn/UI-2B-ITB-25-0121P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0300",
+      "category": "이체",
+      "title": "이체결과 조회",
+      "pdfUrl": "https://test",
+      "info": "즉시이체, 예약이체, 대량이체 등 이체결과를 조회할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0301",
+          "title": "조회",
+          "page": "trn/UI-2B-ITB-25-0130P.html"
+        },
+        {
+          "id": "trn0302",
+          "title": "이체재처리",
+          "page": "trn/UI-2B-ITB-25-0131P.html"
+        },
+        {
+          "id": "trn0303",
+          "title": "재처리 완료",
+          "page": "trn/UI-2B-ITB-25-0132P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0400",
+      "category": "이체",
+      "title": "대량이체 등록",
+      "pdfUrl": "https://test",
+      "info": "대량이체 등록은 파일당 최대 4,000건까지\n등록할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0401",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0140P.html"
+        },
+        {
+          "id": "trn0402",
+          "title": "예금주 확인 및 실행",
+          "page": "trn/UI-2B-ITB-25-0141P.html"
+        },
+        {
+          "id": "trn0403",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0142P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0500",
+      "category": "이체",
+      "title": "급여이체 등록",
+      "pdfUrl": "https://test",
+      "info": "급여이체 등록은 파일당 최대 4,000건까지\n등록할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0501",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0150P.html"
+        },
+        {
+          "id": "trn0502",
+          "title": "예금주 확인 및 실행",
+          "page": "trn/UI-2B-ITB-25-0151P.html"
+        },
+        {
+          "id": "trn0503",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0152P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0600",
+      "category": "이체",
+      "title": "단건출금\n대량이체 등록",
+      "pdfUrl": "https://test",
+      "info": "한 번에 출금해 최대 9,999건까지\n여러 계좌로 대량이체 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0601",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0160P.html"
+        },
+        {
+          "id": "trn0602",
+          "title": "예금주 확인 및 실행",
+          "page": "trn/UI-2B-ITB-25-0161P.html"
+        },
+        {
+          "id": "trn0603",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0162P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0700",
+      "category": "이체",
+      "title": "하나은행으로 외화이체",
+      "pdfUrl": "https://test",
+      "info": "하나은행 계좌 간 외화를 이체할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0701",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0170P.html"
+        },
+        {
+          "id": "trn0702",
+          "title": "실행",
+          "page": "trn/UI-2B-ITB-25-0171P.html"
+        },
+        {
+          "id": "trn0703",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0172P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trn0800",
+      "category": "이체",
+      "title": "다른은행으로\n외화이체(금결원)",
+      "pdfUrl": "https://test",
+      "info": "다른은행으로 외화이체를 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trn0801",
+          "title": "등록",
+          "page": "trn/UI-2B-ITB-25-0180P.html"
+        },
+        {
+          "id": "trn0802",
+          "title": "실행",
+          "page": "trn/UI-2B-ITB-25-0181P.html"
+        },
+        {
+          "id": "trn0803",
+          "title": "완료",
+          "page": "trn/UI-2B-ITB-25-0182P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0000",
+      "category": "B2B전자결제",
+      "title": "전자세금계산서 관리",
+      "pdfUrl": "https://test",
+      "info": "외상 대출실행 등 업무에 필요한\n세금계산서 정보를 등록하고 관리할 수 있습니다.\n국세청(홈택스)에 등록된 공동인증서로\n전자세금계산서 정보를 스크래핑하거나 직접 등록이 가능합니다.",
+      "steps": [
+        {
+          "id": "b2b0001",
+          "title": "전자세금계산서 관리",
+          "page": "b2b/UI-2B-ITB-25-0254P.html"
+        },
+        {
+          "id": "b2b0002",
+          "title": "스크래핑 동의",
+          "page": "b2b/UI-2B-ITB-25-0255P.html"
+        },
+        {
+          "id": "b2b0003",
+          "title": "스크래핑 및 등록",
+          "page": "b2b/UI-2B-ITB-25-0256P.html"
+        },
+        {
+          "id": "b2b0004",
+          "title": "세금계산서 직접 등록",
+          "page": "b2b/UI-2B-ITB-25-0257P.html"
+        },
+        {
+          "id": "b2b0005",
+          "title": "등록내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0259P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0100",
+      "category": "B2B전자결제",
+      "title": "판매기업 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "외담대 및 e-안심팩토링 판매기업 신규 약정을 진행할 수 있습니다.\n구매기업으로부터 외상매출채권을 받아서\n만기전 할인(=대출실행)을 할 수 있습니다.",
+      "infoList": [
+        "만기입금약정: 채권의 만기일에 대금 입금",
+        "만기전 할인(대출)약정: 채권의 만기일 이전에 할인(대출)실행\n가능"
+      ],
+      "steps": [
+        {
+          "id": "b2b0101",
+          "title": "판매기업 약정등록",
+          "page": "b2b/UI-2B-ITB-25-0200P.html"
+        },
+        {
+          "id": "b2b0102",
+          "title": "약정정보입력\n(만기입금약정)",
+          "page": "b2b/UI-2B-ITB-25-0201P.html"
+        },
+        {
+          "id": "b2b0103",
+          "title": "약정정보입력\n(만기전 할인(대출) 약정)",
+          "page": "b2b/UI-2B-ITB-25-0202P.html"
+        },
+        {
+          "id": "b2b0104",
+          "title": "적합성∙적정성 확인서 작성",
+          "page": "b2b/UI-2B-ITB-25-0203P.html"
+        },
+        {
+          "id": "b2b0105",
+          "title": "대출 상품설명서 동의",
+          "page": "b2b/UI-2B-ITB-25-0204P.html"
+        },
+        {
+          "id": "b2b0106",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0205P.html"
+        },
+        {
+          "id": "b2b0107",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0206P.html"
+        },
+        {
+          "id": "b2b0108",
+          "title": "처리결과조회",
+          "page": "b2b/UI-2B-ITB-25-0207P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0200",
+      "category": "B2B전자결제",
+      "title": "외상매출채권\n조회/대출 실행",
+      "pdfUrl": "https://test",
+      "info": "구매기업으로부터 발행된 외상매출채권 내역을 조회하고\n채권을 담보로 대출(=만기전 할인)을 실행할 수 있습니다.\n발행된 채권은 3개의 탭에서 각각 조회할 수 있습니다.",
+      "infoList": [
+        "외상매출채채권 조회/대출 실행: 대출가능한 채권을 조회하여\n대출실행",
+        "판매채권 내역 조회: 발행된 모든 채권 내역 조회",
+        "입금예정 조회: 아직 만기가 도래하지 않은 채권의 입금예정 조회"
+      ],
+      "steps": [
+        {
+          "id": "b2b0201",
+          "title": "외상매출채권\n조회/대출 실행",
+          "page": "b2b/UI-2B-ITB-25-0208P.html"
+        },
+        {
+          "id": "b2b0202",
+          "subtitle": "대출실행 Step 1",
+          "title": "대출정보 입력",
+          "page": "b2b/UI-2B-ITB-25-0210P.html"
+        },
+        {
+          "id": "b2b0203",
+          "subtitle": "대출실행 Step 2",
+          "title": "대출실행정보 확인",
+          "page": "b2b/UI-2B-ITB-25-0213P.html"
+        },
+        {
+          "id": "b2b0204",
+          "subtitle": "대출실행 Step 3",
+          "title": "대출실행 완료",
+          "page": "b2b/UI-2B-ITB-25-0214P.html"
+        },
+        {
+          "id": "b2b0205",
+          "title": "판매채권 내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0215P.html"
+        },
+        {
+          "id": "b2b0206",
+          "title": "입금예정 조회",
+          "page": "b2b/UI-2B-ITB-25-0216P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0300",
+      "category": "B2B전자결제",
+      "title": "1차 협력기업 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "동방성장론(일반)-상생결제 상품에 대한\n1차 협력기업 신규 약정을 진행할 수 있습니다.\n구매기업으로부터 외상매출채권을 받아서 만기에 입금\n또는 만기전 할인(=대출실행)을 할 수 있습니다.",
+      "infoList": [
+        "만기입금약정: 채권의 만기일에 대금 입금",
+        "만기전 할인(대출)약정: 채권의 만기일 이전에 할인(대출) 실행\n가능"
+      ],
+      "steps": [
+        {
+          "id": "b2b0301",
+          "title": "1차 협력기업 약정등록",
+          "page": "b2b/UI-2B-ITB-25-0217P.html"
+        },
+        {
+          "id": "b2b0302",
+          "title": "약정정보입력\n(만기입금약정)",
+          "page": "b2b/UI-2B-ITB-25-0218P.html"
+        },
+        {
+          "id": "b2b0303",
+          "title": "약정정보입력\n(만기전 할인(대출) 약정)",
+          "page": "b2b/UI-2B-ITB-25-0219P.html"
+        },
+        {
+          "id": "b2b0304",
+          "title": "적합성∙적정성 확인서 작성",
+          "page": "b2b/UI-2B-ITB-25-0220P.html"
+        },
+        {
+          "id": "b2b0305",
+          "title": "대출 상품설명서 동의",
+          "page": "b2b/UI-2B-ITB-25-0221P.html"
+        },
+        {
+          "id": "b2b0306",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0222P.html"
+        },
+        {
+          "id": "b2b0307",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0223P.html"
+        },
+        {
+          "id": "b2b0308",
+          "title": "처리결과조회",
+          "page": "b2b/UI-2B-ITB-25-0224P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0400",
+      "category": "B2B전자결제",
+      "title": "동반협력기업 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "동반성장론(협력)-상생결제 상품에 대한\n동반협력기업 신규 약정을 진행할 수 있습니다.\n1차 협력기업은 하위 협력기업 앞 상생매출채권 발행,\n2차 이하 협력기업은 상위 협력기업으로부터 \n상생매출채권을 받아서 만기에 입금 또는 \n만기전 할인(=대출실행)을 할 수 있습니다.",
+      "infoList": [
+        "만기입금약정: 채권의 만기일에 대금 입금",
+        "만기전 할인(대출)약정: 채권의 만기일 이전에 할인(대출) 실행\n가능"
+      ],
+      "steps": [
+        {
+          "id": "b2b0401",
+          "title": "동반협력기업 약정등록",
+          "page": "b2b/UI-2B-ITB-25-0225P.html"
+        },
+        {
+          "id": "b2b0402",
+          "title": "약정정보입력\n(만기입금약정)",
+          "page": "b2b/UI-2B-ITB-25-0226P.html"
+        },
+        {
+          "id": "b2b0403",
+          "title": "약정정보입력\n(만기전 할인(대출) 약정)",
+          "page": "b2b/UI-2B-ITB-25-0227P.html"
+        },
+        {
+          "id": "b2b0404",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0228P.html"
+        },
+        {
+          "id": "b2b0405",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0230P.html"
+        },
+        {
+          "id": "b2b0406",
+          "title": "처리결과조회",
+          "page": "b2b/UI-2B-ITB-25-0231P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0500",
+      "category": "B2B전자결제",
+      "title": "상생매출채권\n조회/대출 실행",
+      "pdfUrl": "https://test",
+      "info": "상위 협력기업으로부터 수취한 상생매출채권 내역을\n조회하고 채권을 담보로 대출(=만기전 할인)을 실행할 수 있습니다.",
+      "infoList": [
+        "만기전 할인 가능 채권조회/대출 실행: 대출가능채권을 조회하여 대출실행",
+        "받은 상생매출채권 조회: 발행된 모든 채권 내역 조회",
+        "입금예정 조회: 아직 만기가 도래하지 않은 채권의 입금예정 내역 조회"
+      ],
+      "steps": [
+        {
+          "id": "b2b0501",
+          "title": "만기전 할인 가능\n채권조회/대출 실행",
+          "page": "b2b/UI-2B-ITB-25-0232P.html"
+        },
+        {
+          "id": "b2b0502",
+          "subtitle": "대출실행 Step 1",
+          "title": "대출정보 입력",
+          "page": "b2b/UI-2B-ITB-25-0233P.html"
+        },
+        {
+          "id": "b2b0503",
+          "subtitle": "대출실행 Step 2",
+          "title": "세금계산서 등록",
+          "page": "b2b/UI-2B-ITB-25-0234P.html"
+        },
+        {
+          "id": "b2b0504",
+          "subtitle": "대출실행 Step 3",
+          "title": "대출실행 완료",
+          "page": "b2b/UI-2B-ITB-25-0237P.html"
+        },
+        {
+          "id": "b2b0505",
+          "title": "받은 상생매출채권 조회",
+          "page": "b2b/UI-2B-ITB-25-0238P.html"
+        },
+        {
+          "id": "b2b0506",
+          "title": "입금예정 조회",
+          "page": "b2b/UI-2B-ITB-25-0239P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0600",
+      "category": "B2B전자결제",
+      "title": "입점Seller 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "공급망(유통망) 상생결제(일반) 상품에 대한\n입점Seller 신규 약정 업무입니다.\n입점Seller 약정 시 약정한 구매기업(온라인마켓)으로부터\n외상매출채권을 수취할 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b0601",
+          "title": "입점Seller 약정등록",
+          "page": "b2b/UI-2B-ITB-25-0240P.html"
+        },
+        {
+          "id": "b2b0602",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0241P.html"
+        },
+        {
+          "id": "b2b0603",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0242P.html"
+        },
+        {
+          "id": "b2b0604",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0243P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0700",
+      "category": "B2B전자결제",
+      "title": "판매기업 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "e-구매론(일반/무보증구매론) 상품에 대한 판매기업 신규약정을\n진행할 수 있습니다.\n판매기업 약정 시 약정한 구매기업으로부터 지급승인(=채권발행)\n받을 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b0701",
+          "title": "판매기업 약정등록",
+          "page": "b2b/UI-2B-ITB-25-0244P.html"
+        },
+        {
+          "id": "b2b0702",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0245P.html"
+        },
+        {
+          "id": "b2b0703",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0246P.html"
+        },
+        {
+          "id": "b2b0704",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0247P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0800",
+      "category": "B2B전자결제",
+      "title": "2차 협력기업 신규 약정",
+      "pdfUrl": "https://test",
+      "info": "상생벤더구매론 2차 협력기업 신규 약정을 진행할 수 있습니다.\n약정 시 1차 협력기업(=구매기업)으로부터 지금승인\n(=채권발행) 받을 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b0801",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0248P.html"
+        },
+        {
+          "id": "b2b0802",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0249P.html"
+        },
+        {
+          "id": "b2b0803",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0250P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b0900",
+      "category": "B2B전자결제",
+      "title": "3차-N차 협력기업\n신규 약정",
+      "pdfUrl": "https://test",
+      "info": "상생벤더구매론 3차~N차 협력기업 신규 약정을\n진행할 수 있습니다.\n약정 시 상위 협력기업으로부터 지금승인(=채권발행)\n받을 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b0901",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0251P.html"
+        },
+        {
+          "id": "b2b0902",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0252P.html"
+        },
+        {
+          "id": "b2b0903",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0253P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1000",
+      "category": "B2B전자결제",
+      "title": "외상매출채권 발행",
+      "pdfUrl": "https://test",
+      "info": "외담대/e-안심팩토링 채권발행 업무입니다.\n발행할 채권내역을 등록 후, 등록내용을 확인하여\n채권발행을 실행하는 2단계 업무입니다.",
+      "steps": [
+        {
+          "id": "b2b1001",
+          "title": "채권내역등록",
+          "page": "b2b/UI-2B-ITB-25-0300P.html"
+        },
+        {
+          "id": "b2b1002",
+          "title": "채권내역등록 완료",
+          "page": "b2b/UI-2B-ITB-25-0301P.html"
+        },
+        {
+          "id": "b2b1003",
+          "title": "등록한 채권 발행",
+          "page": "b2b/UI-2B-ITB-25-0302P.html"
+        },
+        {
+          "id": "b2b1004",
+          "title": "채권 발행 완료",
+          "page": "b2b/UI-2B-ITB-25-0303P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1100",
+      "category": "B2B전자결제",
+      "title": "외상매출채권\n조회/관리",
+      "pdfUrl": "https://test",
+      "info": "발행한 외담대/e-안심팩토링 채권을\n조회, 변경, 취소신청 할 수 있습니다.\n채권 발행작업 결과를 확인하고 결제내역 또는 채권내역을\n조회할 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b1101",
+          "title": "외상매출채권 조회",
+          "page": "b2b/UI-2B-ITB-25-0304P.html"
+        },
+        {
+          "id": "b2b1102",
+          "title": "외상매출채권 변경",
+          "page": "b2b/UI-2B-ITB-25-0305P.html"
+        },
+        {
+          "id": "b2b1103",
+          "title": "취소요청/거절",
+          "page": "b2b/UI-2B-ITB-25-0308P.html"
+        },
+        {
+          "id": "b2b1104",
+          "title": "발행결과 확인",
+          "page": "b2b/UI-2B-ITB-25-0310P.html"
+        },
+        {
+          "id": "b2b1105",
+          "title": "구매 결제내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0311P.html"
+        },
+        {
+          "id": "b2b1106",
+          "title": "구매 채권내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0312P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1200",
+      "category": "B2B전자결제",
+      "title": "외상매출채권 선결제",
+      "pdfUrl": "https://test",
+      "info": "외상매출채권을 채권이 만기 전 선결제 할 수 있습니다.\n(1회 최대 30건까지)\n선결제 신청 및 결과 조회를 체험할 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b1201",
+          "title": "외상매출채권 선결제 조회",
+          "page": "b2b/UI-2B-ITB-25-0313P.html"
+        },
+        {
+          "id": "b2b1202",
+          "title": "외상매출채권 선결제 실행",
+          "page": "b2b/UI-2B-ITB-25-0314P.html"
+        },
+        {
+          "id": "b2b1203",
+          "title": "선결제 신청 완료",
+          "page": "b2b/UI-2B-ITB-25-0315P.html"
+        },
+        {
+          "id": "b2b1204",
+          "title": "선결제 처리결과 확인",
+          "page": "b2b/UI-2B-ITB-25-0316P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1300",
+      "category": "B2B전자결제",
+      "title": "외상매출채권\n조회/관리",
+      "pdfUrl": "https://test",
+      "info": "발행한 동반성장론(일반) 채권을\n조회, 변경, 취소신청 할 수 있습니다.\n채권 발행작업 결과를 확인하고 결제내역 또는 채권내역을\n조회할 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b1301",
+          "title": "외상매출채권 조회",
+          "page": "b2b/UI-2B-ITB-25-0318P.html"
+        },
+        {
+          "id": "b2b1302",
+          "title": "외상매출채권 변경",
+          "page": "b2b/UI-2B-ITB-25-0319P.html"
+        },
+        {
+          "id": "b2b1303",
+          "title": "취소요청/거절",
+          "page": "b2b/UI-2B-ITB-25-0322P.html"
+        },
+        {
+          "id": "b2b1304",
+          "title": "발행결과 확인",
+          "page": "b2b/UI-2B-ITB-25-0324P.html"
+        },
+        {
+          "id": "b2b1305",
+          "title": "구매 결제내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0325P.html"
+        },
+        {
+          "id": "b2b1306",
+          "title": "구매 채권내역 조회",
+          "page": "b2b/UI-2B-ITB-25-0326P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1400",
+      "category": "B2B전자결제",
+      "title": "구매기업(1차 협력기업)\n신규 약정",
+      "pdfUrl": "https://test",
+      "info": "상생벤더구매론 구매기업 신규약정 업무입니다.\n외담대 채권을 수취한 구매기업(=상생외담대 1차 협력기업)이\n2차 협력기업에게 배서효과를 내기 위해 약정하는 상품입니다.",
+      "finishBreak": true,
+      "steps": [
+        {
+          "id": "b2b1401",
+          "title": "구매기업(1차 협력기업)\n약정등록",
+          "page": "b2b/UI-2B-ITB-25-0334P.html"
+        },
+        {
+          "id": "b2b1402",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0335P.html"
+        },
+        {
+          "id": "b2b1403",
+          "title": "적합성∙적정성 확인서 작성",
+          "page": "b2b/UI-2B-ITB-25-0336P.html"
+        },
+        {
+          "id": "b2b1404",
+          "title": "대출 상품설명서 동의",
+          "page": "b2b/UI-2B-ITB-25-0337P.html"
+        },
+        {
+          "id": "b2b1405",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0338P.html"
+        },
+        {
+          "id": "b2b1406",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0339P.html"
+        },
+        {
+          "id": "b2b1407",
+          "title": "처리결과조회",
+          "page": "b2b/UI-2B-ITB-25-0340P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "b2b1500",
+      "category": "B2B전자결제",
+      "title": "구매기업(협력기업)\n신규 약정",
+      "pdfUrl": "https://test",
+      "info": "중심업체(판매기업)를 검색해\n역구매론 신규 약정을 신청 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "b2b1501",
+          "title": "구매기업(협력기업)\n약정등록",
+          "page": "b2b/UI-2B-ITB-25-0327P.html"
+        },
+        {
+          "id": "b2b1502",
+          "title": "약정정보입력",
+          "page": "b2b/UI-2B-ITB-25-0328P.html"
+        },
+        {
+          "id": "b2b1503",
+          "title": "적합성∙적정성 확인서 작성",
+          "page": "b2b/UI-2B-ITB-25-0329P.html"
+        },
+        {
+          "id": "b2b1504",
+          "title": "대출 상품설명서 동의",
+          "page": "b2b/UI-2B-ITB-25-0330P.html"
+        },
+        {
+          "id": "b2b1505",
+          "title": "약정서 동의",
+          "page": "b2b/UI-2B-ITB-25-0331P.html"
+        },
+        {
+          "id": "b2b1506",
+          "title": "약정완료",
+          "page": "b2b/UI-2B-ITB-25-0332P.html"
+        },
+        {
+          "id": "b2b1507",
+          "title": "처리결과조회",
+          "page": "b2b/UI-2B-ITB-25-0333P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "fxd0000",
+      "category": "외환",
+      "title": "건별송금 신청",
+      "pdfUrl": "https://test",
+      "info": "거래 영업점 앞으로 해외송금을 신청하는 서비스로 \n영업점의 최종 확인을 거친 후 송금이 실행됩니다.\n간편하게 받는 분 정보를 불러오거나 직접입력하여 \n신청할 수 있습니다.",
+      "steps": [
+        {
+          "id": "fxd0001",
+          "title": "송금신청",
+          "page": "fxd/UI-2B-ITB-25-0400P.html"
+        },
+        {
+          "id": "fxd0002",
+          "title": "실행",
+          "page": "fxd/UI-2B-ITB-25-0405P.html"
+        },
+        {
+          "id": "fxd0003",
+          "title": "완료",
+          "page": "fxd/UI-2B-ITB-25-0406P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "mnd0000",
+      "category": "대출거래",
+      "title": "납입예정 이자조회",
+      "pdfUrl": "https://test",
+      "info": "납입예정 이자를 대출계좌 건별 혹은 일괄 조회할 수 있습니다.\n일괄조회 시 대출계좌 기준 최대 10개, 실행번호 기준 \n최대 50개까지 가능합니다.",
+      "steps": [
+        {
+          "id": "mnd0001",
+          "title": "납입예정 이자 \n계좌별 상세조회",
+          "page": "mnd/UI-2B-ITB-25-0500P.html"
+        },
+        {
+          "id": "mnd0002",
+          "title": "납입예정 이자 일괄조회",
+          "page": "mnd/UI-2B-ITB-25-0501P.html"
+        },
+        {
+          "id": "mnd0003",
+          "title": "납입예정 이자 일괄조회 \n결과",
+          "page": "mnd/UI-2B-ITB-25-0502P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "usr0000",
+      "category": "뱅킹관리",
+      "title": "사용자 이체한도\n/권한 설정",
+      "pdfUrl": "https://test",
+      "info": "마스터가 사용자별 이체한도, 메뉴, 계좌에 대한\n권한을 부여할 수 있습니다.\n또한, 통제 대상자 추가 및 해제가 가능합니다.",
+      "steps": [
+        {
+          "id": "usr0001",
+          "title": "통제대상자 관리",
+          "page": "usr/UI-2B-ITB-25-0600P.html"
+        },
+        {
+          "id": "usr0002",
+          "title": "이체한도 설정",
+          "page": "usr/UI-2B-ITB-25-0603P.html"
+        },
+        {
+          "id": "usr0003",
+          "title": "메뉴/업무 권한 설정",
+          "page": "usr/UI-2B-ITB-25-0604P.html"
+        },
+        {
+          "id": "usr0004",
+          "title": "계좌권한 설정",
+          "page": "usr/UI-2B-ITB-25-0605P.html"
+        },
+        {
+          "id": "usr0005",
+          "title": "스마트폰 인증/알림 설정",
+          "page": "usr/UI-2B-ITB-25-0606P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "usr0100",
+      "category": "뱅킹관리",
+      "title": "결재선 등록 및 관리",
+      "pdfUrl": "https://test",
+      "info": "결재그룹과 결재선을 등록하고 관리할 수 있습니다.",
+      "steps": [
+        {
+          "id": "usr0101",
+          "title": "구성원/책임자 선택",
+          "page": "usr/UI-2B-ITB-25-0620P.html"
+        },
+        {
+          "id": "usr0102",
+          "title": "한도차감방식 선택",
+          "page": "usr/UI-2B-ITB-25-0623P.html"
+        },
+        {
+          "id": "usr0103",
+          "title": "결재 그룹 만들기 완료",
+          "page": "usr/UI-2B-ITB-25-0624P.html"
+        },
+        {
+          "id": "usr0104",
+          "title": "결재대상 업무 선택",
+          "page": "usr/UI-2B-ITB-25-0627P.html"
+        },
+        {
+          "id": "usr0105",
+          "title": "결재 단계 설정",
+          "page": "usr/UI-2B-ITB-25-0631P.html"
+        },
+        {
+          "id": "usr0106",
+          "title": "결재선 만들기 완료",
+          "page": "usr/UI-2B-ITB-25-0634P.html"
+        },
+        {
+          "id": "usr0107",
+          "title": "결재선 수정",
+          "page": "usr/UI-2B-ITB-25-0636P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "usr0200",
+      "category": "뱅킹관리",
+      "title": "서류 발급/업로드",
+      "pdfUrl": "https://test",
+      "info": "기업서류함을 통해 법인의 각종 서류를 스크래핑 또는\n업로드하면 은행 업무를 간편하게 처리할 수 있습니다.",
+      "steps": [
+        {
+          "id": "usr0201",
+          "title": "증명서 발급하기(스크래핑)",
+          "page": "usr/UI-2B-ITB-25-0640P.html"
+        },
+        {
+          "id": "usr0202",
+          "title": "약관동의",
+          "page": "usr/UI-2B-ITB-25-0641P.html"
+        },
+        {
+          "id": "usr0203",
+          "title": "인증서 선택",
+          "page": "usr/UI-2B-ITB-25-0642P.html"
+        },
+        {
+          "id": "usr0204",
+          "title": "발급서류 선택",
+          "page": "usr/UI-2B-ITB-25-0643P.html"
+        },
+        {
+          "id": "usr0205",
+          "title": "스크래핑",
+          "page": "usr/UI-2B-ITB-25-0644P.html"
+        },
+        {
+          "id": "usr0206",
+          "title": "발급 완료",
+          "page": "usr/UI-2B-ITB-25-0645P.html"
+        },
+        {
+          "id": "usr0207",
+          "title": "서류 업로드하기",
+          "page": "usr/UI-2B-ITB-25-0650P.html"
+        },
+        {
+          "id": "usr0208",
+          "title": "업로드 서류 선택",
+          "page": "usr/UI-2B-ITB-25-0651P.html"
+        },
+        {
+          "id": "usr0209",
+          "title": "서류 등록",
+          "page": "usr/UI-2B-ITB-25-0652P.html"
+        },
+        {
+          "id": "usr0210",
+          "title": "업로드 완료",
+          "page": "usr/UI-2B-ITB-25-0653P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "usr0300",
+      "category": "뱅킹관리",
+      "title": "서류 발급/업로드\n내역조회",
+      "pdfUrl": "https://test",
+      "info": "서류명 및 조회기간 설정 후 조회하면,\n발급/업로드 이력을 확인할 수 있습니다.",
+      "steps": [
+        {
+          "id": "usr0301",
+          "title": "서류 발급/업로드 내역 조회",
+          "page": "usr/UI-2B-ITB-25-0660P.html"
+        },
+        {
+          "id": "usr0302",
+          "title": "서류 상세정보",
+          "page": "usr/UI-2B-ITB-25-0661P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "usr0400",
+      "category": "뱅킹관리",
+      "title": "서류 사용이력 조회",
+      "pdfUrl": "https://test",
+      "info": "하나은행 영업점 업무에 사용된 문서 이력을 조회할 수 있습니다.",
+      "steps": [
+        {
+          "id": "usr0401",
+          "title": "서류 사용이력 조회",
+          "page": "usr/UI-2B-ITB-25-0670P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "apx0000",
+      "category": "결재함",
+      "title": "결재할 내역",
+      "pdfUrl": "https://test",
+      "info": "결재할 내역을 조회하고 결재 또는 반려 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "apx0001",
+          "title": "목록조회",
+          "page": "apx/UI-2B-ITB-25-0710P.html"
+        },
+        {
+          "id": "apx0002",
+          "title": "정보확인",
+          "page": "apx/UI-2B-ITB-25-0711P.html"
+        },
+        {
+          "id": "apx0003",
+          "title": "결재완료",
+          "page": "apx/UI-2B-ITB-25-0712P.html"
+        },
+        {
+          "id": "apx0004",
+          "title": "반려",
+          "page": "apx/UI-2B-ITB-25-0713P.html"
+        },
+        {
+          "id": "apx0005",
+          "title": "반려정보 입력",
+          "page": "apx/UI-2B-ITB-25-0714P.html"
+        },
+        {
+          "id": "apx0006",
+          "title": "반려완료",
+          "page": "apx/UI-2B-ITB-25-0715P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "apx0100",
+      "category": "결재함",
+      "title": "결재한 내역",
+      "pdfUrl": "https://test",
+      "info": "결재 처리한 내역을 조회하고 회수 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "apx0101",
+          "title": "결재한 내역",
+          "page": "apx/UI-2B-ITB-25-0720P.html"
+        },
+        {
+          "id": "apx0102",
+          "title": "결재회수",
+          "page": "apx/UI-2B-ITB-25-0721P.html"
+        },
+        {
+          "id": "apx0103",
+          "title": "회수완료",
+          "page": "apx/UI-2B-ITB-25-0722P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "apx0200",
+      "category": "결재함",
+      "title": "등록한 내역",
+      "pdfUrl": "https://test",
+      "info": "등록한 거래내역을 조회하고 결재요청 취소를 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "apx0201",
+          "title": "등록한 내역",
+          "page": "apx/UI-2B-ITB-25-0730P.html"
+        },
+        {
+          "id": "apx0202",
+          "title": "결재요청 취소",
+          "page": "apx/UI-2B-ITB-25-0731P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trx0000",
+      "category": "거래함",
+      "title": "실행할 내역",
+      "pdfUrl": "https://test",
+      "info": "실행할 내역을 조회하고\n거래를 실행하거나 반려할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trx0001",
+          "title": "목록조회",
+          "page": "trx/UI-2B-ITB-25-0810P.html"
+        },
+        {
+          "id": "trx0002",
+          "title": "정보확인",
+          "page": "trx/UI-2B-ITB-25-0811P.html"
+        },
+        {
+          "id": "trx0003",
+          "title": "실행완료",
+          "page": "trx/UI-2B-ITB-25-0812P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "trx0100",
+      "category": "거래함",
+      "title": "실행한 내역",
+      "pdfUrl": "https://test",
+      "info": "실행한 내역을 조회할 수 있습니다.",
+      "steps": [
+        {
+          "id": "trx0101",
+          "title": "실행한 내역",
+          "page": "trx/UI-2B-ITB-25-0820P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "cer0000",
+      "category": "인증센터",
+      "title": "인증서 발급/재발급",
+      "pdfUrl": "https://test",
+      "info": "공동인증서 또는 금융인증서를\n발급/재발급 할 수 있습니다.",
+      "steps": [
+        {
+          "id": "cer0001",
+          "title": "인증서 선택",
+          "page": "cer/UI-2B-ITB-25-0900P.html"
+        },
+        {
+          "id": "cer0002",
+          "title": "약관 동의",
+          "page": "cer/UI-2B-ITB-25-0904P.html"
+        },
+        {
+          "id": "cer0003",
+          "title": "신청확인",
+          "page": "cer/UI-2B-ITB-25-0905P.html"
+        },
+        {
+          "id": "cer0004",
+          "title": "발급정보입력",
+          "page": "cer/UI-2B-ITB-25-0906P.html"
+        },
+        {
+          "id": "cer0005",
+          "title": "저장매체 선택",
+          "page": "cer/UI-2B-ITB-25-0907P.html"
+        },
+        {
+          "id": "cer0006",
+          "title": "발급완료",
+          "page": "cer/UI-2B-ITB-25-0908P.html"
+        }
+      ]
+    },
+    {
+      "pageId": "cer0100",
+      "category": "인증센터",
+      "title": "스마트폰 인증서 복사",
+      "pdfUrl": "https://test",
+      "info": "PC에 저장된 인증서를 스마트폰으로 내보내거나\n스마트폰에 저장된 인증서를 PC로 가져올 수 있습니다.",
+      "steps": [
+        {
+          "id": "cer0101",
+          "title": "인증서 내보내기",
+          "page": "cer/UI-2B-ITB-25-0910P.html"
+        },
+        {
+          "id": "cer0102",
+          "title": "인증서 가져오기",
+          "page": "cer/UI-2B-ITB-25-0911P.html"
+        }
+      ]
+    }
+  ]
+}

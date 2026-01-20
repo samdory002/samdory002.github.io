@@ -1,0 +1,89 @@
+﻿<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>윈도우 팝업 미리보기</title>
+    <style>
+      body {
+        font-family: 'Pretendard', Arial, sans-serif;
+        margin: 0;
+        padding: 40px;
+        background: #f5f5f5;
+      }
+      .preview-box {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+        padding: 32px;
+        text-align: center;
+      }
+      .preview-box h1 {
+        margin-bottom: 12px;
+        font-size: 20px;
+        color: #333;
+      }
+      .preview-box p {
+        margin-bottom: 24px;
+        color: #555;
+        line-height: 1.5;
+      }
+      .preview-box button {
+        padding: 12px 24px;
+        border: none;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #009178, #1d4fd7);
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+      }
+      .preview-box button:hover {
+        transform: translateY(-1px);
+      }
+      .info {
+        margin-top: 16px;
+        font-size: 13px;
+        color: #888;
+      }
+
+      button + button {
+        margin-top: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="preview-box">
+      <h1>윈도우 팝업 미리보기</h1>
+      <p>
+        아래 버튼을 클릭하면 기업뱅킹 가이드 페이지가 새 팝업으로 열립니다.<br />
+      </p>
+      <button id="openPopup">
+        체험관 메인 새창열기(/cont/tutorial/index.html)
+      </button>
+      <button id="openPopupCer">
+        인증센터 첫 메뉴
+        새창열기(/cont/tutorial/index.html#workflow?menuId=cer0000)
+      </button>
+      <div class="info">팝업 차단 기능이 켜져 있으면 허용해 주세요.</div>
+    </div>
+
+    <script>
+      document
+        .getElementById('openPopup')
+        .addEventListener('click', function () {
+          var url = '/cont/tutorial/index.html'
+          var features = 'width=1200,height=800,resizable=no,scrollbars=no'
+          window.open(url, 'hanaGuidePreview', features)
+        })
+      document
+        .getElementById('openPopupCer')
+        .addEventListener('click', function () {
+          var url = '/cont/tutorial/index.html#workflow?menuId=cer0000'
+          var features = 'width=1200,height=800,resizable=no,scrollbars=no'
+          window.open(url, 'hanaGuidePreview', features)
+        })
+    </script>
+  </body>
+</html>
